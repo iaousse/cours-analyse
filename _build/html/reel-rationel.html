@@ -54,6 +54,8 @@
     <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Recherche" href="search.html" />
+    <link rel="next" title="Content with notebooks" href="notebooks.html" />
+    <link rel="prev" title="Les nombres réels et complexes" href="reel.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -90,19 +92,19 @@
   </a>
  </li>
 </ul>
-<ul class="nav bd-sidenav">
- <li class="toctree-l1 has-children">
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active has-children">
   <a class="reference internal" href="reel.html">
    Les nombres réels et complexes
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
   <label for="toctree-checkbox-1">
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="reel-rationel.html">
+  <ul class="current">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
      Les nombres rationels
     </a>
    </li>
@@ -154,7 +156,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="_sources/markdown.md"><button type="button"
+        <a class="dropdown-buttons" href="_sources/reel-rationel.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Télécharger le fichier source" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -174,7 +176,7 @@
                 data-toggle="tooltip" data-placement="left" title="Dépôt source"><i
                     class="fab fa-github"></i>dépôt</button></a>
         <a class="issues-button"
-            href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fmarkdown.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Freel-rationel.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Ouvrez un problème"><i class="fas fa-lightbulb"></i>signaler un problème</button></a>
         
@@ -201,13 +203,13 @@
             <nav id="bd-toc-nav">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#what-is-myst">
-   What is MyST?
+  <a class="reference internal nav-link" href="#les-nombres-entiers-naturels">
+   Les nombres entiers naturels
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#what-are-roles-and-directives">
-   What are roles and directives?
+  <a class="reference internal nav-link" href="#les-nombres-entiers-relatifs">
+   Les nombres entiers relatifs
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
@@ -245,20 +247,63 @@
                 
   <div class="section" id="les-nombres-rationels">
 <h1>Les nombres rationels<a class="headerlink" href="#les-nombres-rationels" title="Lien permanent vers ce titre">¶</a></h1>
-<p>On note l’ensembles des entiers naturels <span class="math notranslate nohighlight">\(\mathbb N = \{1, 2, 3, \ldots \}\)</span>.</p>
+<div class="section" id="les-nombres-entiers-naturels">
+<h2>Les nombres entiers naturels<a class="headerlink" href="#les-nombres-entiers-naturels" title="Lien permanent vers ce titre">¶</a></h2>
+<p>On note l’ensembles des entiers naturels <span class="math notranslate nohighlight">\(\mathbb N = \{0,1, 2, 3, \ldots \}\)</span>.</p>
 <p>Les nombres entiers sont caractérisé par le fait que chaque nombre <span class="math notranslate nohighlight">\(n\)</span> admet un, et un seul, succeseur <span class="math notranslate nohighlight">\(n+1\)</span>. On se convainc donc que l’ensemble <span class="math notranslate nohighlight">\(\mathbb N\)</span> est infini.</p>
-<p>Whether you write your book’s content in Jupyter Notebooks (<code class="docutils literal notranslate"><span class="pre">.ipynb</span></code>) or
-in regular markdown files (<code class="docutils literal notranslate"><span class="pre">.md</span></code>), you’ll write in the same flavor of markdown
-called <strong>MyST Markdown</strong>.</p>
-<div class="section" id="what-is-myst">
-<h2>What is MyST?<a class="headerlink" href="#what-is-myst" title="Lien permanent vers ce titre">¶</a></h2>
-<p>MyST stands for « Markedly Structured Text ». It
-is a slight variation on a flavor of markdown called « CommonMark » markdown,
-with small syntax extensions to allow you to write <strong>roles</strong> and <strong>directives</strong>
-in the Sphinx ecosystem.</p>
+<div class="admonition-principe-de-recurence admonition">
+<p class="admonition-title">Principe de recurence</p>
+<p>Soit <span class="math notranslate nohighlight">\(P(n)\)</span> une propriété qui depend d’un entier naturel <span class="math notranslate nohighlight">\(n\)</span>. Supposons que:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(P(0)\)</span> est vrai;</p></li>
+<li><p><span class="math notranslate nohighlight">\(\forall n \in \mathbb N\)</span>, (<span class="math notranslate nohighlight">\(P(n)\)</span> est vrai) <span class="math notranslate nohighlight">\(\rightarrow (P(n+1)\)</span> est vrai).</p></li>
+</ul>
+<p>Alors la propiété est vrai pour tout <span class="math notranslate nohighlight">\(n \in \mathbb N\)</span>.</p>
 </div>
-<div class="section" id="what-are-roles-and-directives">
-<h2>What are roles and directives?<a class="headerlink" href="#what-are-roles-and-directives" title="Lien permanent vers ce titre">¶</a></h2>
+<div class="admonition-proprietes-des-nombres-entiers admonition">
+<p class="admonition-title">Propriétés des nombres entiers</p>
+<p><span class="math notranslate nohighlight">\(\forall m, n, p \in \mathbb N\)</span>:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(m+n=n+m \in \mathbb N\)</span>;</p></li>
+<li><p><span class="math notranslate nohighlight">\((m+n)+p = m+(n+p) =:m+n+p\)</span>;</p></li>
+<li><p><span class="math notranslate nohighlight">\(m\times n = n\times m \in \mathbb N\)</span>;</p></li>
+<li><p><span class="math notranslate nohighlight">\((m\times n)\times p = m\times(n\times p)\)</span>;</p></li>
+<li><p><span class="math notranslate nohighlight">\((m+n)\times p = (m\times p) + (n\times p)\)</span>;</p></li>
+<li><p><span class="math notranslate nohighlight">\(m+p = n +p \rightarrow m=n\)</span>;</p></li>
+<li><p>si <span class="math notranslate nohighlight">\(m+n=0\)</span> alors <span class="math notranslate nohighlight">\(m=n=0\)</span>;</p></li>
+<li><p>si <span class="math notranslate nohighlight">\( m\times n = 0\)</span> alors <span class="math notranslate nohighlight">\(m=0\)</span> ou <span class="math notranslate nohighlight">\(n=0\)</span>;</p></li>
+<li><p>si <span class="math notranslate nohighlight">\( m\times p = n\times p\)</span> et <span class="math notranslate nohighlight">\(p&gt;0\)</span> alors <span class="math notranslate nohighlight">\(m=n\)</span>;</p></li>
+<li><p><span class="math notranslate nohighlight">\( m \leq m\)</span>;</p></li>
+<li><p>si <span class="math notranslate nohighlight">\( m \leq n\)</span> et <span class="math notranslate nohighlight">\(n\leq p\)</span> alors <span class="math notranslate nohighlight">\(m\leq p\)</span>;</p></li>
+<li><p><span class="math notranslate nohighlight">\(m \leq n\)</span> si et seulement si <span class="math notranslate nohighlight">\( m+c \leq n + c\)</span>;</p></li>
+<li><p>si <span class="math notranslate nohighlight">\(m&lt;n\)</span> et <span class="math notranslate nohighlight">\(p&gt;0\)</span> alors <span class="math notranslate nohighlight">\(m\times p &lt; n\times p\)</span>;</p></li>
+<li><p>si <span class="math notranslate nohighlight">\(m&lt;n\)</span> alors <span class="math notranslate nohighlight">\(m+1 \leq n\)</span>;</p></li>
+<li><p><span class="math notranslate nohighlight">\(m&lt;n\)</span> si et seulement si <span class="math notranslate nohighlight">\(\exits d\in \mathbb N\)</span> tel que <span class="math notranslate nohighlight">\(m=n+d\)</span> et <span class="math notranslate nohighlight">\(d&gt;0\)</span></p></li>
+<li><p>l’ordre est total : exactement l’une des assertions suivantes est correcte:</p>
+<ul>
+<li><p><span class="math notranslate nohighlight">\(m&lt;n\)</span>;</p></li>
+<li><p><span class="math notranslate nohighlight">\(m&gt;n\)</span>;</p></li>
+<li><p><span class="math notranslate nohighlight">\(m=n\)</span>.</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<p>Les opérations soustraction et division sont aussi possibles dans <span class="math notranslate nohighlight">\(\mathbb N\)</span>. Cependant, leur résultats n’est pas toujours dans <span class="math notranslate nohighlight">\(\mathbb N\)</span>. Nous allons les voir dans les sections suivantes.</p>
+<div class="admonition-proposition-algorithme-d-euclid admonition">
+<p class="admonition-title">Proposition (Algorithme d’Euclid)</p>
+<p>Soient <span class="math notranslate nohighlight">\(n\in \mathbb N\)</span> et <span class="math notranslate nohighlight">\(q\in \mathbb N\setminus0\)</span>. Alors</p>
+<div class="math notranslate nohighlight">
+\[
+\exists m,r \in \mathbb N, 0\leq r&lt;q \mbox{ et } n = mq +r
+\]</div>
+</div>
+</div>
+<div class="section" id="les-nombres-entiers-relatifs">
+<h2>Les nombres entiers relatifs<a class="headerlink" href="#les-nombres-entiers-relatifs" title="Lien permanent vers ce titre">¶</a></h2>
+<div class="admonition-definition admonition">
+<p class="admonition-title">Définition</p>
+<p>Un entier relatif est une expression de la forme <span class="math notranslate nohighlight">\(m-n\)</span> où <span class="math notranslate nohighlight">\(m\)</span> et <span class="math notranslate nohighlight">\(n\)</span> sont des entiers naturels. Deux entiers relatifs sont considérés égales <span class="math notranslate nohighlight">\(m-n = p-q\)</span> si et seulement si <span class="math notranslate nohighlight">\(m+q=n+p\)</span>. L’ensemble de ces nombres est noté <span class="math notranslate nohighlight">\(\mathbb Z\)</span>.</p>
+</div>
 <p>Roles and directives are two of the most powerful tools in Jupyter Book. They
 are kind of like functions, but written in a markup language. They both
 serve a similar purpose, but <strong>roles are written in one line</strong>, whereas
@@ -310,7 +355,7 @@ role syntax <code class="docutils literal notranslate"><span class="pre">{doc}`i
 <h3>Adding a citation<a class="headerlink" href="#adding-a-citation" title="Lien permanent vers ce titre">¶</a></h3>
 <p>You can also cite references that are stored in a <code class="docutils literal notranslate"><span class="pre">bibtex</span></code> file. For example,
 the following syntax: <code class="docutils literal notranslate"><span class="pre">{cite}`holdgraf_evidence_2014`</span></code> will render like
-this: <span id="id1">[<a class="reference internal" href="reel-rationel.html#id3"><span>HdHPK14</span></a>]</span>.</p>
+this: <span id="id1">[<a class="reference internal" href="#id3"><span>HdHPK14</span></a>]</span>.</p>
 <p>Moreoever, you can insert a bibliography into your page with this syntax:
 The <code class="docutils literal notranslate"><span class="pre">{bibliography}</span></code> directive must be used for all the <code class="docutils literal notranslate"><span class="pre">{cite}</span></code> roles to
 render properly.
@@ -379,6 +424,8 @@ see <a class="reference external" href="https://myst-nb.readthedocs.io/">The MyS
         
         <div class='prev-next-bottom'>
             
+    <a class='left-prev' id="prev-link" href="reel.html" title="previous page">Les nombres réels et complexes</a>
+    <a class='right-next' id="next-link" href="notebooks.html" title="next page">Content with notebooks</a>
 
         </div>
         

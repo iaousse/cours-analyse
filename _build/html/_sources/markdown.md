@@ -1,4 +1,9 @@
-# Markdown Files
+# Les nombres rationels
+
+On note l'ensembles des entiers naturels $\mathbb N = \{1, 2, 3, \ldots \}$. 
+
+Les nombres entiers sont caractérisé par le fait que chaque nombre $n$ admet un, et un seul, succeseur $n+1$. On se convainc donc que l'ensemble $\mathbb N$ est infini.
+
 
 Whether you write your book's content in Jupyter Notebooks (`.ipynb`) or
 in regular markdown files (`.md`), you'll write in the same flavor of markdown
