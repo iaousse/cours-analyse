@@ -1,5 +1,5 @@
-Content in Jupyter Book
+Les nombres réels et complexes
 =======================
-
-There are many ways to write content in Jupyter Book. This short section
-covers a few tips for how to do so.
+Le prèsent chapitre discute les ensembles $\mathbb N, \mathbb Q$ et $\mathbb R$. Le chapitre est structuré comme suit:
+- Ensembles des rationels $\mathbb Q$;
+- Ensembles des nombres réelles.
