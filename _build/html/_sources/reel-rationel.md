@@ -52,46 +52,20 @@ $$
 
 ```{admonition} Définition
 Un entier relatif est une expression de la forme $m-n$ où $m$ et $n$ sont des entiers naturels. Deux entiers relatifs sont considérés égales $m-n = p-q$ si et seulement si $m+q=n+p$. L'ensemble de ces nombres est noté $\mathbb Z$.
-
 ```
-Roles and directives are two of the most powerful tools in Jupyter Book. They
-are kind of like functions, but written in a markup language. They both
-serve a similar purpose, but **roles are written in one line**, whereas
-**directives span many lines**. They both accept different kinds of inputs,
-and what they do with those inputs depends on the specific role or directive
-that is being called.
-
-### Using a directive
-
-At its simplest, you can insert a directive into your book's content like so:
-
-````
-```{mydirectivename}
-My directive content
+Les entiers relatifs sont donc $\mathbb Z =\{\ldots, -2, -1, 0, 1, 3, \ldots\}$.
+Les nombres entiers relatifs possèdent les propriétés suivantes:
+```{admonition} Propriétés
+L'ensembles des entiers relatifs est un aneau commutatif:
+- $x+y= y+x$;
+- $(x+y) +z = x+(y+z)$;
+- $x + 0= x$;
+- $x + (-x) = 0$;
+- $xy=yx$;
+- $(xy)z= x(yz) =:xyz$;
+- $x1=x$;
+- $x(y+z) = xy + xz$.
 ```
-````
-
-This will only work if a directive with name `mydirectivename` already exists
-(which it doesn't). There are many pre-defined directives associated with
-Jupyter Book. For example, to insert a note box into your content, you can
-use the following directive:
-
-````
-```{note}
-Here is a note
-```
-````
-
-This results in:
-
-```{note}
-Here is a note
-```
-
-In your built book.
-
-For more information on writing directives, see the
-[MyST documentation](https://myst-parser.readthedocs.io/).
 
 
 ### Using a role
